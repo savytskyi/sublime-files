@@ -6,7 +6,8 @@
 	"font_size": 17,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"JavaScript"
 	],
 	"tab_size": 2,
 	"theme": "Soda Light 3.sublime-theme",
