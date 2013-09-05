@@ -1,0 +1,44 @@
+<snippet>
+	<content><![CDATA[
+# UITableView delegate / datasource methods
+def tableView(table, cellForRowAtIndexPath: index)
+  cell = table.dequeueReusableCellWithIdentifier(@reuse_id, forIndexPath:index)
+  item = @data[index.section][:cells][index.row]
+
+  # customize your cell here
+
+  cell
+end
+
+def numberOfSectionsInTableView(table)
+  @data ? @data.count : 0
+end
+
+def tableView(table, numberOfRowsInSection: section)
+  @data ? @data[section][:cells].count : 0
+end
+
+def tableView(table, didSelectRowAtIndexPath: index)
+  @table.deselectRowAtIndexPath index, animated: true
+
+  # cell was selected, do something!
+  p index
+end
+
+def tableView(table, titleForHeaderInSection: section)
+  @data[section][:title] || ""
+end
+
+def tableView(table, heightForRowAtIndexPath:index)
+  item = @data[index.section][:cells][index.row]
+  item[:height] || 44
+end
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>snip_table_methods</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>
+
+

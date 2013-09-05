@@ -1,6 +1,11 @@
 {
 	"installed_packages":
 	[
-		"Better JavaScript"
+		"All Autocomplete",
+		"Better CoffeeScript",
+		"Better JavaScript",
+		"Jade",
+		"RubyMotion Autocomplete",
+		"Theme - Soda"
 	]
 }

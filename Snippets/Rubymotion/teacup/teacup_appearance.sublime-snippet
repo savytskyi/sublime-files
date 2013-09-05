@@ -1,0 +1,52 @@
+<snippet>
+	<content><![CDATA[
+Teacup::Appearance.new do
+	# Don't forget to add this to app_delegate:on_load
+	# Teacup::Appearance.apply
+
+  style UINavigationBar,
+	  backgroundColor: 0x${1:text_shadow_color}.uicolor
+    shadowImage: '${2:image/path}'uiimage,
+    titleTextAttributes: {
+    	UITextAttributeFont => "${3:font_name}".uifont(${4:font_size}), # UIFont.fontWithName('Font', size: 9),
+      UITextAttributeTextShadowColor => 0x${5:text_shadow_color}.uicolor,
+      UITextAttributeTextColor => 0x${6:text_shadow_color}.uicolor,
+    },
+    # tintColor: 0x${7:000000}.uicolor,
+
+  style UIBarButtonItem,
+  	backgroundColor: 0x${1:text_shadow_color}.uicolor
+    titleTextAttributes: {
+    	UITextAttributeFont => "${2:font_name}".uifont(${3:font_size}), # UIFont.fontWithName('Font', size: 9),
+      UITextAttributeTextShadowColor => 0x${4:text_shadow_color}.uicolor,
+      UITextAttributeTextColor => 0x${5:text_shadow_color}.uicolor,
+    },
+    # tintColor: 0x${6:000000}.uicolor,
+
+  style UISearchBar,
+    backgroundColor: 0x${1:text_shadow_color}.uicolor
+    shadowImage: '${2:image/path}'uiimage,
+    backgroundImage: "${3:image/path".uiimage,
+    titleTextAttributes: {
+    	UITextAttributeFont => "${4:font_name}".uifont(${5:font_size}), # UIFont.fontWithName('Font', size: 9),
+      UITextAttributeTextShadowColor => 0x${6:text_shadow_color}.uicolor,
+      UITextAttributeTextColor => 0x${7:text_shadow_color}.uicolor,
+    },
+    # tintColor: 0x${8:000000}.uicolor,
+
+
+  # UINavigationBar.appearanceWhenContainedIn(UINavigationBar, nil).setTintColor(UIColor.blackColor)
+  # style UIBarButtonItem, when_contained_in: UINavigationBar,
+  # 	tintColor: UIColor.blackColor
+
+  # UINavigationBar.appearanceWhenContainedIn(UIToolbar, UIPopoverController, nil).setTintColor(UIColor.blackColor)
+  # style UIBarButtonItem, when_contained_in: [UIToolbar, UIPopoverController],
+  # 	tintColor: UIColor.blackColor
+
+end
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>snip_teacup_init_appearance</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>

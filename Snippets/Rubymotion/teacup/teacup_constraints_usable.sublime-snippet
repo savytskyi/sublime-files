@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+constraints: [
+	constrain(:top).equals(:superview, :top).plus(0),
+	constrain(:right).equals(:superview, :right).plus(0),
+	constrain(:bottom).equals(:superview, :bottom).plus(0),
+	constrain(:left).equals(:superview, :left).plus(0),
+
+	constrain(:center_x).equals(:superview, :center_x).plus(0),
+	constrain(:center_y).equals(:superview, :center_y).plus(0),
+
+	constrain_width(100),
+	constrain_height(100),
+]
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>snip_teacup_constraints_usable</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>

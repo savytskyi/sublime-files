@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+class ${1:Cell} < UITableViewCell
+	def initWithFrame(frame)
+    super
+
+    # cell initialization here
+    selection = UIView.new
+    selection.backgroundColor = 0x7ada3d.uicolor
+    self.selectedBackgroundView = selection
+    self.contentView.backgroundColor = 0xfafafa.uicolor
+
+    $2
+
+    self
+	end
+end
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>snip_table_view_cell</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>
