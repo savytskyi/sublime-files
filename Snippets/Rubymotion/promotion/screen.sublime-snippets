@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-def $1Screen < PM:Screen
-	title '$1'
+def ${1:Screen} < PM:Screen
+	title '${2:Screen Name}'
 
 	def on_load
     # set_nav_bar_button :right, title: "Next", action: :action

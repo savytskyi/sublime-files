@@ -10,7 +10,7 @@ class ${1:Cell} < UITableViewCell
     self.selectedBackgroundView = selection
     self.contentView.backgroundColor = 0xfafafa.uicolor
 
-    $2
+    ${2}
 
     self
 	end

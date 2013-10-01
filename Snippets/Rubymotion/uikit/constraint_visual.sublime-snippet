@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
 self.${1:view}.addConstraints NSLayoutConstraint.constraintsWithVisualFormat(
-  "$2",
+  "${2:|-5-[element]-5-|}",
   options: 0,
   metrics: nil,
-  views: { "$3" => $3, "$4" => $4 }
+  views: { "${3:element1}" => ${3:element1}, "${4:element2}" => ${4:element2} }
 )
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

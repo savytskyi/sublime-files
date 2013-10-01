@@ -4,7 +4,8 @@ ${1:@table} = subview(UITableView.alloc.init, :style)
 ${1:@table}.delegate = self
 ${1:@table}.dataSource = self
 ${1:@table}.tableFooterView = UIView.new
-${1:@table}.registerClass(${2:CellClass}, forCellReuseIdentifier: ${2:@reuse_id})
+@reuse_id = ${2:REUSE_ID_CONSTANT}
+${1:@table}.registerClass(${3:CellClass}, forCellReuseIdentifier: @reuse_id)
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>snip_table_init</tabTrigger>
