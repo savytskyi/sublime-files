@@ -30,7 +30,7 @@ def ${1:Screen} < PM:Screen
   end
 
   def will_dismiss
-  	# good place to remove notification ovservers
+  	# good place to remove notification observers
 
   end
 end
