@@ -20,6 +20,8 @@ end
 
 def tableView(table, didSelectRowAtIndexPath: index)
   @table.deselectRowAtIndexPath index, animated: true
+  item = @data[index.section][:cells][index.row]
+  cell = table.cellForRowAtIndexPath index
 
   # cell was selected, do something!
   p index

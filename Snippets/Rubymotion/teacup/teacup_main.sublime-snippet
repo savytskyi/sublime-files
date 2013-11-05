@@ -1,17 +1,11 @@
 <snippet>
 	<content><![CDATA[
-include Constants
+include AppConstants
 Teacup::Stylesheet.new :${1:stylesheet_name} do
 	# import :another_stylesheet_to_extend
 
   style :${2:style}, # extends: :another_style
-    backgroundColor: UIColor.clearColor,
-    constraints: [
-      
-    ]
-
-  style :${3:style},
-    backgroundColor: UIColor.clearColor,
+    backgroundColor: 0xffffff.uicolor,
     constraints: [
       
     ]

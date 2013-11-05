@@ -1,0 +1,42 @@
+<snippet>
+	<content><![CDATA[
+def ${1:Screen} < PM:Screen
+	title '${2:Screen Name}'
+  stylesheet :${3:stylesheet_name}
+
+	def on_load
+    # fix for a navigation bar height in ios7
+    # self.setEdgesForExtendedLayout(UIRectEdgeLeft | UIRectEdgeBottom | UIRectEdgeRight) if Device.ios_version.to_f >= 7.0
+    # set_nav_bar_button :right, title: "Next", action: :action
+  end
+
+  def will_present
+  	# before pushing screen to the view controller.
+  	# Good place to set up screen
+
+
+    self.view.apply_constraints
+  end
+
+  def on_appear
+  	# screen has appeared. Good time to load something
+
+  end
+
+  def will_disappear
+  end
+
+  def on_disappear
+  end
+
+  def will_dismiss
+  	# good place to remove notification ovservers
+
+  end
+end
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>snip_pm_screen</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>

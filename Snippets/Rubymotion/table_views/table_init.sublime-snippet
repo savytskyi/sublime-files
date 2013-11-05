@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-${1:@table} = subview(UITableView.alloc.init, :style)
+${1:@table} = subview(UITableView.plain, :style)
 ${1:@table}.delegate = self
 ${1:@table}.dataSource = self
 ${1:@table}.tableFooterView = UIView.new

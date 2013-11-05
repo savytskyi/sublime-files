@@ -1,13 +1,13 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
 	"drag_text": false,
 	"draw_centered": false,
 	"font_size": 17,
 	"ignored_packages":
 	[
-		"JavaScript",
-		"Vintage"
+		"Vintage",
+		"JavaScript"
 	],
 	"tab_size": 2,
 	"theme": "Soda Light 3.sublime-theme",

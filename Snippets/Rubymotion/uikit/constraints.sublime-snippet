@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
-self.${1:view}.addConstraint(NSLayoutConstraint.constraintWithItem(${2:element},
-  attribute:  NSLayoutAttribute${2:attribute},
+self.${1:contentView}.addConstraint(NSLayoutConstraint.constraintWithItem(${2:element},
+  attribute:  NSLayoutAttribute${3:attribute},
   relatedBy:  NSLayoutRelationEqual,
-  toItem:     ${3:view},
-  attribute:  NSLayoutAttribute{4:attribute},
+  toItem:     ${4:self.contentView},
+  attribute:  NSLayoutAttribute${5:attribute},
   multiplier: 1,
-  constant:   {5:constant})
+  constant:   ${6:constant})
 )
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

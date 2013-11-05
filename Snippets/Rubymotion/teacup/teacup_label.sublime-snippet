@@ -2,11 +2,11 @@
 	<content><![CDATA[
 backgroundColor: 0x${1:000000}.uicolor,
 textColor: 0x${2:000000}.uicolor,
-textAlignment: NSTextAlignment${3:side}, # Left || Center || Right
-font: "${4:font_name}".uifont(${5:font_size}), # UIFont.fontWithName('Font', size: 9),
+textAlignment: NSTextAlignment${3:Center}, # Left || Center || Right
+font: "${4:HelveticaNeue}".uifont(${5:14}),
 numberOfLines: ${6:1}, # 0 -> unlimited lines
 lineBreakMode: NSLineBreakByWordWrapping,
-# highlightedTextColor: 0x${7:000000}.uicolor,
+highlightedTextColor: 0x${1}.uicolor,
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>snip_teacup_label</tabTrigger>
