@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-def ${1:Screen} < PM:Screen
+class ${1:Screen} < PM::Screen
 	title '${2:Screen Name}'
   stylesheet :${3:stylesheet_name}
 
