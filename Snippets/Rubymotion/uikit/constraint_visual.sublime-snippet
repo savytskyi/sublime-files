@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 self.${1:contentView}.addConstraints NSLayoutConstraint.constraintsWithVisualFormat(
-  "|-5-[${2:element}]-5-|}",
+  "|-5-[${2:element}]-5-|",
   options: 0,
   metrics: nil,
   views: { "${2:element}" => ${2:element}, "${3:element2}" => ${3:element2} }

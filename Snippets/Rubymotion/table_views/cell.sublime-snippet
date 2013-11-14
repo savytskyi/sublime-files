@@ -12,10 +12,20 @@ class ${1:Cell} < UITableViewCell
     self.selectedBackgroundView = selection
     self.contentView.backgroundColor = 0xfafafa.uicolor
 
-    ${2}
+    layout(self.contentView) do
+      @label = subview(UILabel.new, :label)
+      @label.translatesAutoresizingMaskIntoConstraints = false
+    end
+    
+
+    set_constraints
 
     self
 	end
+
+    def set_constraints
+
+    end
 end
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

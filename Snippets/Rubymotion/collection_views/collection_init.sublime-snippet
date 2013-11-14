@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+${1:flow_layout} = UICollectionViewFlowLayout.alloc.init
+${1:flow_layout}.scrollDirection = UICollectionViewScrollDirectionVertical
+${1:flow_layout}.itemSize = [$2, $3]
+${1:flow_layout}.minimumInteritemSpacing = 0
+${1:flow_layout}.minimumLineSpacing = 0
+
+@reuse_id = $4
+@data = [{ cells: [] }]
+
+${5:@collection} = subview(UICollectionView.alloc.initWithFrame(CGRectZero, collectionViewLayout: ${1:flow_layout}), :$6)
+${5:@collection}.registerClass(${7:CollectionCell}, forCellWithReuseIdentifier: @collection_reuse_id)
+${5:@collection}.showsHorizontalScrollIndicator = false
+${5:@collection}.showsVerticalScrollIndicator = false
+${5:@collection}.dataSource = self
+${5:@collection}.delegate = self
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>snip_collection_init</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>
