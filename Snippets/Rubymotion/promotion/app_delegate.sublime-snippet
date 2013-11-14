@@ -1,0 +1,43 @@
+<snippet>
+	<content><![CDATA[
+class AppDelegate < PM::Delegate
+
+  def set_up_services
+    Teacup::Appearance.apply
+    # MagicalRecord.setupCoreDataStack
+    # TestFlight.takeOff("")
+    # Crittercism.enableWithAppID("")
+    # @mixpanel = Mixpanel.sharedInstanceWithToken("")
+    # Parse.setApplicationId("8ItkYyOGceW72PZoUK6qlWji5jW1U8hTRNqZJ7Xe", clientKey:"6wNolhzv0VnnPFG5hzT1r50X8iIeISikO8af8N0j")
+    # PFAnalytics.trackAppOpenedWithLaunchOptions nil
+    # PFTwitterUtils.initializeWithConsumerKey "", consumerSecret: ""
+    # PFFacebookUtils.initializeFacebook
+  end
+
+  # parse + facebook
+  def application(application, handleOpenURL: url)
+    return PFFacebookUtils.handleOpenURL url
+  end
+  
+  # parse + facebook
+  def application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    return PFFacebookUtils.handleOpenURL url
+  end
+
+  def on_load(app, options)
+    set_up_services
+
+    login = LoginScreen.new
+    if PFUser.currentUser
+      login.open_app
+    else
+      open login
+    end
+  end
+end
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>snip_pm_app_delegate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>

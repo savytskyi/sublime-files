@@ -1,8 +1,10 @@
 <snippet>
 	<content><![CDATA[
 class ${1:Cell} < UITableViewCell
+    include Teacup::Layout 
 	def initWithStyle(style, reuseIdentifier:reuseIdentifier)
     super
+    self.stylesheet = :main_styles
 
     # cell initialization here
     selection = UIView.new
