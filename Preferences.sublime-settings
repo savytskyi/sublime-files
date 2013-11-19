@@ -1,6 +1,6 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
+	"color_scheme": "Packages/User/Color Scheme/Calydon-light.tmTheme",
 	"drag_text": false,
 	"draw_centered": false,
 	"font_size": 17,
@@ -10,6 +10,7 @@
 		"Vintage"
 	],
 	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
 	"theme": "Soda Light 3.sublime-theme",
 	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?"
 }
