@@ -5,6 +5,7 @@ class ${1:Screen} < PM::Screen
   stylesheet :${3:stylesheet_name}
 
 	def on_load
+    # add notification observers here
     # fix for a navigation bar height in ios7
     # self.setEdgesForExtendedLayout(UIRectEdgeLeft | UIRectEdgeBottom | UIRectEdgeRight) if Device.ios_version.to_f >= 7.0
     # set_nav_bar_button :right, title: "Next", action: :action
@@ -29,9 +30,8 @@ class ${1:Screen} < PM::Screen
   def on_disappear
   end
 
-  def will_dismiss
+  def on_unload
   	# good place to remove notification observers
-
   end
 end
 ]]></content>

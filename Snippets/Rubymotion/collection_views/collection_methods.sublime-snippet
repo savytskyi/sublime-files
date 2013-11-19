@@ -11,7 +11,7 @@ end
 
 def collectionView(collectionView, cellForItemAtIndexPath: index)
   cell = collectionView.dequeueReusableCellWithReuseIdentifier(@collection_reuse_id,
-    forIndexPath:indexPath
+    forIndexPath:index
   )
   item = ${1:@data}[index.section][:cells][index.row]
 
