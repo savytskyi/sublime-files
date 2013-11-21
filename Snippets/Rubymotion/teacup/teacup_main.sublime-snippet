@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 include AppConstants
 Teacup::Stylesheet.new :${1:stylesheet_name} do
-	# import :another_stylesheet_to_extend
+  # import :another_stylesheet_to_extend
 
   style :${2:style}, # extends: :another_style
     backgroundColor: 0xffffff.uicolor,
@@ -11,8 +11,8 @@ Teacup::Stylesheet.new :${1:stylesheet_name} do
     ]
 end
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>snip_teacup_init_main</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.ruby</scope>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>snip_teacup_init_main</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
 </snippet>

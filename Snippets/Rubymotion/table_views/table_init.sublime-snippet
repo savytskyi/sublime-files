@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 ${1:@table} = subview(UITableView.plain, :style)
 ${1:@table}.delegate = self
 ${1:@table}.dataSource = self
@@ -7,8 +7,8 @@ ${1:@table}.tableFooterView = UIView.new
 @reuse_id = ${2:REUSE_ID_CONSTANT}
 ${1:@table}.registerClass(${3:CellClass}, forCellReuseIdentifier: @reuse_id)
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>snip_table_init</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.ruby</scope>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>snip_table_init</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
 </snippet>

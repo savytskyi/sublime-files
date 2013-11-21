@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 Teacup::Appearance.new do
-	# Don't forget to add this to app_delegate:on_load
-	# Teacup::Appearance.apply
+  # Don't forget to add this to app_delegate:on_load
+  # Teacup::Appearance.apply
 
   # style UINavigationBar,
   #   backgroundColor: 0xtext_shadow_color.uicolor
@@ -36,7 +36,7 @@ Teacup::Appearance.new do
   #   backgroundImage: ''.uiimage,
   #   tintColor: 0xffffff.uicolor,
   #   titleTextAttributes: {
-  #   	UITextAttributeFont => "HelveticaNeue".uifont(14),
+  #     UITextAttributeFont => "HelveticaNeue".uifont(14),
   #     UITextAttributeTextShadowColor => 0x${6:text_shadow_color}.uicolor,
   #     UITextAttributeTextColor => 0x${7:text_shadow_color}.uicolor,
   #   }
@@ -47,16 +47,16 @@ Teacup::Appearance.new do
 
   # UINavigationBar.appearanceWhenContainedIn(UINavigationBar, nil).setTintColor(UIColor.blackColor)
   # style UIBarButtonItem, when_contained_in: UINavigationBar,
-  # 	tintColor: UIColor.blackColor
+  #   tintColor: UIColor.blackColor
 
   # UINavigationBar.appearanceWhenContainedIn(UIToolbar, UIPopoverController, nil).setTintColor(UIColor.blackColor)
   # style UIBarButtonItem, when_contained_in: [UIToolbar, UIPopoverController],
-  # 	tintColor: UIColor.blackColor
+  #   tintColor: UIColor.blackColor
 
 end
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>snip_teacup_init_appearance</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.ruby</scope>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>snip_teacup_init_appearance</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
 </snippet>

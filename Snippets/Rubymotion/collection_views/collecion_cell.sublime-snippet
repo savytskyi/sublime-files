@@ -1,31 +1,31 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 class ${1:CollectionCell} < UICollectionViewCell
-	include Teacup::Layout 
-	def initWithFrame(frame)
-		super
+  include Teacup::Layout 
+  def initWithFrame(frame)
+    super
 
-		self.stylesheet = :main_styles
+    self.stylesheet = :main_styles
 
-		self.contentView.backgroundColor = 0xffffff.uicolor
+    self.contentView.backgroundColor = 0xffffff.uicolor
 
-		layout(self.contentView) do
-			@label = subview(UILabel.new, :label)
+    layout(self.contentView) do
+      @label = subview(UILabel.new, :label)
       @label.translatesAutoresizingMaskIntoConstraints = false
     end
 
     set_constraints
 
-		self
-	end
+    self
+  end
 
-	def set_constraints
+  def set_constraints
 
-	end
+  end
 end
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>snip_collection_view_cell</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.ruby</scope>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>snip_collection_view_cell</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
 </snippet>

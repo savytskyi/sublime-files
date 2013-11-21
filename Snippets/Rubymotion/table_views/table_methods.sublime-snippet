@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 # UITableView delegate / datasource methods
 def tableView(table, cellForRowAtIndexPath: index)
   cell = table.dequeueReusableCellWithIdentifier(@reuse_id, forIndexPath:index)
@@ -37,10 +37,10 @@ def tableView(table, heightForRowAtIndexPath:index)
 end
 
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>snip_table_methods</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.ruby</scope>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>snip_table_methods</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
 </snippet>
 
 

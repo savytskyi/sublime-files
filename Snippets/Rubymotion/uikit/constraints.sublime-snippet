@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 self.${1:contentView}.addConstraint(NSLayoutConstraint.constraintWithItem(${2:element},
   attribute:  NSLayoutAttribute${3:attribute},
   relatedBy:  NSLayoutRelationEqual,
@@ -9,8 +9,8 @@ self.${1:contentView}.addConstraint(NSLayoutConstraint.constraintWithItem(${2:el
   constant:   ${6:constant})
 )
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>snip_constraint_default</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.ruby</scope>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>snip_constraint_default</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
 </snippet>

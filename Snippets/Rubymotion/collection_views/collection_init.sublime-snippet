@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 ${1:flow_layout} = UICollectionViewFlowLayout.alloc.init
 ${1:flow_layout}.scrollDirection = UICollectionViewScrollDirectionVertical
 ${1:flow_layout}.itemSize = [$2, $3]
@@ -16,8 +16,8 @@ ${5:@collection}.showsVerticalScrollIndicator = false
 ${5:@collection}.dataSource = self
 ${5:@collection}.delegate = self
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>snip_collection_init</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.ruby</scope>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>snip_collection_init</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
 </snippet>
