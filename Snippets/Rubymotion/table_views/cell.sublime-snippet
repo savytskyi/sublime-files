@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 class ${1:Cell} < UITableViewCell
-    include Teacup::Layout 
+  include Teacup::Layout 
   def initWithStyle(style, reuseIdentifier:reuseIdentifier)
     super
     self.stylesheet = :main_styles
@@ -23,9 +23,9 @@ class ${1:Cell} < UITableViewCell
     self
   end
 
-    def set_constraints
+  def set_constraints
 
-    end
+  end
 end
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -10,7 +10,7 @@
 		"Vintage"
 	],
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
 	"theme": "Soda Light 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?"
 }
