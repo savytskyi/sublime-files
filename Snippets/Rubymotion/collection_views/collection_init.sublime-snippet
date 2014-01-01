@@ -10,7 +10,7 @@ ${1:flow_layout}.minimumLineSpacing = 0
 @data = [{ cells: [] }]
 
 ${5:@collection} = subview(UICollectionView.alloc.initWithFrame(CGRectZero, collectionViewLayout: ${1:flow_layout}), :$6)
-${5:@collection}.registerClass(${7:CollectionCell}, forCellWithReuseIdentifier: @collection_reuse_id)
+${5:@collection}.registerClass(${7:CollectionCell}, forCellWithReuseIdentifier: @reuse_id)
 ${5:@collection}.showsHorizontalScrollIndicator = false
 ${5:@collection}.showsVerticalScrollIndicator = false
 ${5:@collection}.dataSource = self
