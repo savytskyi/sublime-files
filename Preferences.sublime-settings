@@ -1,7 +1,10 @@
 {
 	"auto_complete_commit_on_tab": true,
+	"bold_folder_labels": true,
+	"create_window_at_startup": false,
 	"color_scheme": "Packages/User/Color Scheme/Calydon-light.tmTheme",
 	"drag_text": false,
+  "highlight_line": true,
 	"draw_centered": false,
 	"font_size": 18,
 	"ignored_packages":
@@ -9,6 +12,7 @@
 		"JavaScript",
 		"Vintage"
 	],
+	"remember_open_files": true,
 	"tab_size": 2,
 	"theme": "Soda Light 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
