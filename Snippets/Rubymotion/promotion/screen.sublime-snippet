@@ -5,33 +5,30 @@ class ${1:Screen} < PM::Screen
   stylesheet :${3:stylesheet_name}
 
   def on_load
-    # add notification observers here
-    # fix for a navigation bar height in ios7
-    # self.setEdgesForExtendedLayout(UIRectEdgeLeft | UIRectEdgeBottom | UIRectEdgeRight) if Device.ios_version.to_f >= 7.0
-    # set_nav_bar_button :right, title: "Next", action: :action
+    self.navigationItem.setLeftBarButtonItems [
+      UIBarButtonItem.cancel { cancel }
+    ]
+    self.navigationItem.setRightBarButtonItems [
+      UIBarButtonItem.save { save }
+    ]
+
+    # set up screen here
   end
 
   def will_present
     # before pushing screen to the view controller.
-    # Good place to set up screen
+    # Good place to set up notification observers
 
 
+    
+  end
+
+  def will_appear
     self.view.apply_constraints
   end
 
-  def on_appear
-    # screen has appeared. Good time to load something
-
-  end
-
-  def will_disappear
-  end
-
   def on_disappear
-  end
-
-  def on_unload
-    # good place to remove notification observers
+    # remove notification observers
   end
 end
 ]]></content>

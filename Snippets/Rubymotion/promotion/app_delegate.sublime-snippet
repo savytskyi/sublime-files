@@ -5,12 +5,12 @@ class AppDelegate < PM::Delegate
   def set_up_services
     Teacup::Appearance.apply
     # MagicalRecord.setupCoreDataStack
-    # TestFlight.takeOff("")
-    # Crittercism.enableWithAppID("")
-    # @mixpanel = Mixpanel.sharedInstanceWithToken("")
-    # Parse.setApplicationId("8ItkYyOGceW72PZoUK6qlWji5jW1U8hTRNqZJ7Xe", clientKey:"6wNolhzv0VnnPFG5hzT1r50X8iIeISikO8af8N0j")
+    # TestFlight.takeOff SERVICE_TESTFLIGHT
+    # Crittercism.enableWithAppID SERVICE_CRITTERCISM
+    # Mixpanel.sharedInstanceWithToken SERVICE_MIXPANEL
+    # Parse.setApplicationId SERVICE_PARSE_APP_ID, clientKey: SERVICE_PARSE_CLIENT_KEY
     # PFAnalytics.trackAppOpenedWithLaunchOptions nil
-    # PFTwitterUtils.initializeWithConsumerKey "", consumerSecret: ""
+    # PFTwitterUtils.initializeWithConsumerKey SERVICE_TWITTER_CONSUMER_KEY, consumerSecret: SERVICE_TWITTER_SECRET
     # PFFacebookUtils.initializeFacebook
   end
 

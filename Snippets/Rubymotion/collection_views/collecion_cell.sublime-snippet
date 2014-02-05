@@ -6,21 +6,13 @@ class ${1:CollectionCell} < UICollectionViewCell
     super
 
     self.stylesheet = :main_styles
-
     self.contentView.backgroundColor = 0xffffff.uicolor
 
     layout(self.contentView) do
-      @label = subview(UILabel.new, :label)
-      @label.translatesAutoresizingMaskIntoConstraints = false
+      @name = subview(UILabel.new, :cell_name)
     end
 
-    set_constraints
-
     self
-  end
-
-  def set_constraints
-
   end
 end
 ]]></content>

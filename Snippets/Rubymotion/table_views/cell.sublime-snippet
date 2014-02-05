@@ -7,24 +7,17 @@ class ${1:Cell} < UITableViewCell
     self.stylesheet = :main_styles
 
     # cell initialization here
-    selection = UIView.new
-    selection.backgroundColor = 0x7ada3d.uicolor
-    self.selectedBackgroundView = selection
-    self.contentView.backgroundColor = 0xfafafa.uicolor
+    # self.selectionStyle = UITableViewCellSelectionStyleNone
+    # selection = UIView.new
+    # selection.backgroundColor = 0x7ada3d.uicolor
+    # self.selectedBackgroundView = selection
+    self.contentView.backgroundColor = 0xffffff.uicolor
 
     layout(self.contentView) do
-      @label = subview(UILabel.new, :label)
-      @label.translatesAutoresizingMaskIntoConstraints = false
+      @name = subview(UILabel.new, :cell_name)
     end
-    
-
-    set_constraints
 
     self
-  end
-
-  def set_constraints
-
   end
 end
 ]]></content>

@@ -7,6 +7,8 @@ def tableView(table, cellForRowAtIndexPath: index)
 
   # customize your cell here
 
+  cell.restyle!
+  cell.apply_constraints
   cell
 end
 
