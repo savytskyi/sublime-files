@@ -1,10 +1,11 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/User/Color Scheme/Calydon-light.tmTheme",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
 	"create_window_at_startup": false,
 	"drag_text": false,
 	"draw_centered": false,
+	"font_face": "Hack",
 	"font_size": 18,
 	"highlight_line": true,
 	"ignored_packages":
@@ -12,9 +13,16 @@
 		"JavaScript",
 		"Vintage"
 	],
+	"itg_small_tabs": true,
 	"remember_open_files": true,
+	"rulers":
+	[
+		80
+	],
 	"tab_size": 2,
-	"theme": "Soda Light 3.sublime-theme",
+	"theme": "Soda Dark.sublime-theme",
+	"trailing_spaces_include_current_line": false,
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?"
 }

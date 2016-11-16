@@ -1,19 +1,36 @@
 {
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"All Autocomplete",
-		"Better CoffeeScript",
+		"arduino-cli",
 		"Better JavaScript",
-		"CoffeeComplete Plus (Autocompletion)",
+		"BracketHighlighter",
+		"CTags",
 		"Cucumber",
-		"Cucumber Step Finder",
-		"FileDiffs",
+		"Dockerfile Syntax Highlighting",
+		"EJS",
+		"Elixir",
+		"ElixirSublime",
 		"Gherkin (Cucumber) Formatter",
-		"GoSublime",
+		"GitGutter",
+		"Handlebars",
+		"Hyperloop EJS",
 		"Jade",
+		"Jinja2",
+		"LiveScript",
+		"Markdown Preview",
+		"nginx",
+		"ObjC2RubyMotion",
+		"Package Control",
 		"RubyMotion Autocomplete",
+		"Sass",
 		"Stylus",
-		"Theme - Centurion",
-		"Theme - Soda"
+		"Theme - Soda",
+		"Theme - Sodarized",
+		"Tomorrow Color Schemes"
 	]
 }
